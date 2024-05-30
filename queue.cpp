@@ -60,8 +60,7 @@ public:
 
         int front_position = front;
         int rear_position = rear;
-        
-
+    
 		if (front == -1) {
 			cout << "Queue is empty\n";
 			return;
@@ -91,5 +90,6 @@ public:
 };
 
 int main(){
-
+    Queues q;
+	char ch;
 }
