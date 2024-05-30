@@ -57,11 +57,34 @@ public:
 	}
 
     void display() {
+
+
 		if (front == -1) {
 			cout << "Queue is empty\n";
 			return;
 		}
 		cout << "\nElement in the queue are ...\n";
+
+        if (front <= rear) {
+			while (front <= rear) {
+				cout << queue_array[front] << "  ";
+
+			}
+			cout << endl;
+		}
+		else {
+			while (front <= max - 1) {
+				cout << queue_array[front] << " ";
+				front++;
+			}
+			front = 0;
+			while (front <= rear) {
+				cout << queue_array[front] << " ";
+				front++;
+			}
+			cout << endl;
+		}
+	}
 };
 
 int main(){
