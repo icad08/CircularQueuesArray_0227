@@ -35,6 +35,26 @@ public:
         }
         queue_array[rear] = num;
     }
+    void remove() {
+		
+		if (front == -1) {
+			cout << "Queue underflow\n";
+			return;
+		}
+		cout << "\nThe element deleted from the queue is:" << queue_array[front] << "\n";
+
+        if (front == rear) {
+			front = -1;
+			rear = -1;
+		}
+		else {
+			if (front == max - 1)
+				front - 0;
+			else
+				front = front + 1;
+		}
+
+	}
 };
 
 int main(){
