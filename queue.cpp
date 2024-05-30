@@ -52,10 +52,16 @@ public:
 				front - 0;
 			else
 				front = front + 1;
-       
 		}
 
 	}
+
+    void display() {
+		if (front == -1) {
+			cout << "Queue is empty\n";
+			return;
+		}
+		cout << "\nElement in the queue are ...\n";
 };
 
 int main(){
