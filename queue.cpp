@@ -58,6 +58,9 @@ public:
 
     void display() {
 
+        int front_position = front;
+        int rear_position = rear;
+        
 
 		if (front == -1) {
 			cout << "Queue is empty\n";
